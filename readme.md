@@ -36,8 +36,5 @@ Je vindt extra uitleg en hulp in de bijhorende `README.md` files, die je in elke
 - `git commit -m "Fixed excercise 2 of week 3"`
   Slaat alle wijzigingen die je zonet heb toegevoegd in één batch op, met een beschrijvende boodschap (tussen double quotes).
 
-- `git checkout w2`
-  Wisselt naar een andere branch, in dit voorbeeld de branche met naam 'w2'.
-
 - `git pull`
   Haalt de nieuwste wijzigingen van de remote repository op en voegt ze samen met de lokale branch.
