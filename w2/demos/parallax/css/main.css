@@ -1,0 +1,82 @@
+body {
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
+  font-family: "Amatic SC", serif;
+  background-color: hsl(21, 21%, 16%);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Hero */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.hero__asset {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero__title {
+  text-align: center;
+  top: 35vh;
+  position: relative;
+  color: hsl(21, 21%, 16%);
+  font-size: 14rem;
+  z-index: 2;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Assets */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.sky {
+  z-index: 0;
+}
+
+.balloon {
+  z-index: 2;
+  left: unset;
+}
+
+.road {
+  z-index: 3;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Section */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.section {
+  position: relative;
+  width: 100%;
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 8rem 4rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  color: hsl(32, 61%, 91%);
+}
+
+.section__text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 2rem;
+  line-height: 1.6;
+}
+
+.section__note a {
+  color: currentColor;
+  font-size: 1.4rem;
+  color: hsl(49, 100%, 50%);
+}

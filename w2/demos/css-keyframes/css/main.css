@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+}
+
+.ball {
+  width: 5rem;
+  height: 5rem;
+  background-color: hsl(0, 100%, 50%);
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+}

@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.2;
+  font-size: 5rem;
+}
+
+.content {
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.title {
+  text-align: center;
+  color: hsla(60, 100%, 50%, 0.464);
+}
+
+.text-reveal {
+  margin: 5rem auto;
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  color: hsla(60, 100%, 50%, 0.215);
+  max-width: 75rem;
+  text-wrap: pretty;
+}
+
+.text-reveal.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,50 @@
+body {
+  /*
+Road Side Painting
+Joseph Roache
+United States
+url: https://www.saatchiart.com/en-be/art/Painting-Road-Side/574242/2261343/view
+*/
+  background: url("../assets/road.jpg");
+  background-size: cover;
+  background-position: bottom;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.race-track {
+  position: absolute;
+  width: 90%;
+  height: 200px;
+  bottom: 0;
+}
+
+.bike {
+  position: absolute;
+  bottom: 25px;
+  transition: left 1s;
+  width: 200px;
+}
+
+.bike-2 {
+  bottom: 100px;
+}
+
+.button-start-race {
+  background-color: hsl(0, 0%, 96%);
+  border: 2px solid hsl(0, 0%, 80%);
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.2);
+  margin-top: 20px;
+}
+
+.button-start-race:hover {
+  background-color: hsl(0, 0%, 89%);
+}

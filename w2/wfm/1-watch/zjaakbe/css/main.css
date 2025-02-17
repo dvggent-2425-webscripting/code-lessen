@@ -1,0 +1,89 @@
+/* Degheest by Ange Degheest, Camille Depalle, Eugénie Bidaut, Luna Delabre, Mandy Elbé, May Jolivet, Oriane Charvieux, Benjamin Gomez, Justine Herbel. Distributed by velvetyne.fr. */
+
+@font-face {
+    font-family: 'Abordage';
+    src: url('../webfonts/Abordage-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+.canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode:  difference;
+
+}
+
+.title {
+    font-family: 'Abordage', sans-serif;    
+}
+
+.svg-logo {
+    max-height: 100%;
+    height: auto;
+    overflow: visible;
+}
+
+
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.i-dot{
+    cursor: pointer;
+    animation: scalingAnimation 5s infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.overlay{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    color: white;
+    opacity: 1  ;
+    transition: opacity 3s;
+}
+
+.hidden{
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
+@keyframes scalingAnimation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(35);
+    }
+    
+}
