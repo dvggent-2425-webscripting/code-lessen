@@ -1,0 +1,36 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 13%);
+}
+
+.gallery {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.gallery img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery img.hovered {
+  animation: hoverEffect 0.5s ease-in-out forwards;
+}
+
+@keyframes hoverEffect {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.2) rotate(10deg);
+  }
+  100% {
+    transform: scale(1.1) rotate(-5deg);
+  }
+}

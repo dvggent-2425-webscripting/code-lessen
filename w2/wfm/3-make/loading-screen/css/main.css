@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 13%);
+  font-family: Arial, sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+.loading-container {
+  width: 300px;
+  height: 30px;
+  background-color: hsl(0, 0%, 27%);
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.loading-bar {
+  width: 0;
+  height: 100%;
+  background-color: hsl(120, 61%, 50%);
+}
+
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.message.visible {
+  opacity: 1;
+}
+
+@keyframes fillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  background: hsl(348, 83%, 47%);
+  color: hsl(0, 0%, 100%);
+  font-size: 16px;
+  cursor: pointer;
+}

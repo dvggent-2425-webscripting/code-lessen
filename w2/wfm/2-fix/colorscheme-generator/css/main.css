@@ -1,0 +1,38 @@
+.color-div-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.color-div {
+  width: 6.25rem;
+  height: 6.25rem;
+  margin: 0.625rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.buttons-wrapper {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%); /* Center the buttons horizontally */
+  display: flex;
+  gap: 1rem; /* Add space between buttons */
+}
+
+.saved-color-schemes {
+  position: relative;
+  margin-top: 2rem;
+  max-height: 37rem;
+  overflow: scroll;
+  text-align: center;
+  background-color: hsl(200, 7%, 92%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.color-scheme-collection {
+  display: inline-flex;
+}

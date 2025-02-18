@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lichtschakelaar</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/lightbulb.css">
+</head>
+
+<body>
+    <!-- Rounded switch -->
+    <label id="switch" class="switch">
+        <input type="checkbox" id="checkbox-switch">
+        <span class="slider round"></span>
+    </label>
+
+    <section class="area">
+        <div class="wire"></div>
+        <div class="fixture">
+          <div class="strip"></div>
+          <div class="strip"></div>
+          <div class="strip"></div>
+        </div>
+        <div  id="bulb" class="bulb off">
+          <div class="zig"></div>
+          <div class="zig"></div>
+          <div class="zig"></div>
+        </div>
+      </section>
+
+      <aside class="information-dialog">
+        <h2>Informatie</h2>
+        <p>Aantal keer geschakeld: <span id="times-switched">0</span></p>
+        <p>Totaal verbruik: <span id="total-usage">0</span> Wh</p>
+      </aside>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
