@@ -1,0 +1,125 @@
+.background-list {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background: #4f6fc9;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.background-list li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: fallAndRotate 19s linear infinite;
+}
+
+.background-list li:nth-child(odd) {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.background-list li:nth-child(even) {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.background-list li:nth-child(1) {
+    left: 2%;
+    width: 120px;
+    height: 120px;
+    bottom: -120px;
+    animation-delay: 1s;
+}
+
+.background-list li:nth-child(2) {
+    left: 9%;
+    width: 195px;
+    height: 195px;
+    bottom: -195px;
+    animation-delay: 2s;
+}
+
+.background-list li:nth-child(3) {
+    left: 69%;
+    width: 176px;
+    height: 176px;
+    bottom: -176px;
+    animation-delay: 7s;
+}
+
+.background-list li:nth-child(4) {
+    left: 16%;
+    width: 125px;
+    height: 125px;
+    bottom: -125px;
+    animation-delay: 1s;
+}
+
+.background-list li:nth-child(5) {
+    left: 25%;
+    width: 115px;
+    height: 115px;
+    bottom: -115px;
+    animation-delay: 12s;
+}
+
+.background-list li:nth-child(6) {
+    left: 26%;
+    width: 181px;
+    height: 181px;
+    bottom: -181px;
+    animation-delay: 23s;
+}
+
+.background-list li:nth-child(7) {
+    left: 3%;
+    width: 180px;
+    height: 180px;
+    bottom: -180px;
+    animation-delay: 25s;
+}
+
+.background-list li:nth-child(8) {
+    left: 38%;
+    width: 136px;
+    height: 136px;
+    bottom: -136px;
+    animation-delay: 19s;
+}
+
+.background-list li:nth-child(9) {
+    left: 1%;
+    width: 115px;
+    height: 115px;
+    bottom: -115px;
+    animation-delay: 31s;
+}
+
+.background-list li:nth-child(10) {
+    left: 55%;
+    width: 100px;
+    height: 100px;
+    bottom: -100px;
+    animation-delay: 6s;
+}
+
+
+@keyframes fallAndRotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}

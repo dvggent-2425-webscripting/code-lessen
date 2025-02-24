@@ -1,0 +1,150 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* General */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+body,
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+
+  font-family: sans-serif;
+  background: hsl(0, 0%, 13%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 6rem);
+  grid-template-areas:
+    ". top ."
+    "left . right"
+    ". bottom .";
+  grid-gap: 1rem;
+}
+
+/*
+* Meer info over visueel content verbergen, rekening houdend met a11y (accessibility):
+* https://www.a11yproject.com/posts/how-to-hide-content
+*/
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Buttons */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  background-color: hsla(0, 0%, 100%, 0.2);
+  color: white;
+  backdrop-filter: blur(6rem);
+  box-shadow: 0 0.25rem 0.4rem rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.button:hover {
+  background-color: hsla(0, 0%, 100%, 0.3);
+  box-shadow: 0 0.4rem 0.5rem hsla(0, 0%, 0%, 0.15);
+}
+
+/*
+* 'grid-area' is een propertie die werkt in combinatie met 'display: grid' op
+* het parent element. Meer info over CSS grid:
+* https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+.button-left {
+  grid-area: left;
+}
+
+.button-top {
+  grid-area: top;
+}
+
+.button-right {
+  grid-area: right;
+}
+
+.button-bottom {
+  grid-area: bottom;
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: hsl(0, 100%, 50%);
+  cursor: pointer;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* Slide in modals */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.slide-in {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsla(0, 0%, 100%, 0.1);
+  color: hsl(0, 0%, 100%);
+  font-size: 1.5rem;
+  backdrop-filter: blur(5px);
+
+  transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Specifieke positionering van elk slide-in element */
+.slide-in.top {
+  top: 0;
+  left: 0;
+  transform: translateY(-100%);
+}
+
+.slide-in.right {
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
+}
+
+.slide-in.bottom {
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+}
+
+.slide-in.left {
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+}
+
+/* Specifieke positionering van elk slide-in element, wanneer actief */
+.slide-in.top.active {
+  transform: translateY(0);
+}
+
+.slide-in.right.active {
+  transform: translateX(0);
+}
+
+.slide-in.bottom.active {
+  transform: translateY(0);
+}
+
+.slide-in.left.active {
+  transform: translateX(0);
+}

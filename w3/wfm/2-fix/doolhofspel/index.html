@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Game</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/background.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--very much based upon https://www.geeksforgeeks.org/navigating-the-labyrinth-a-maze-generator-game-using-html-css-javascript/ -->
+    <div class="game">
+        <div class="menu-bar">
+            <h1 class="menu-title">Labyrinth</h1>
+
+            <div class="menu-buttons">
+                <button class="start-button">Start</button>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <canvas id="maze-canvas" height="400px" width="400px" class="maze-canvas"></canvas>
+        </div>
+
+        <div class="menu-buttons">
+            <button class="direction-button" id="button-up">Up</button>
+            <button class="direction-button" id="button-down">Down</button>
+            <button class="direction-button" id="button-right">Right</button>
+            <button class="direction-button" id="button-left">Left</button>
+        </div>
+    </div>
+
+    <div id="message-box" class="message-box"></div>
+
+    <ul class="background-list">
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+        <li class="background-item"></li>
+    </ul>
+
+    <!-- Basis: dit is het basis script waarin er nog een aantal foutjes zitten die je moet oplossen -->
+    <script src="js/main.js"></script>
+
+    <!-- Exceleren: include en vervolledig onderstaand script om een extra functionaliteit toe te voegen -->
+    <!-- <script src="js/excel.js"></script> -->
+</body>
+
+</html>
