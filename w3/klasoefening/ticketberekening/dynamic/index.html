@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ticket</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div class="ticket">
+		<div class="left">
+			<div class="image">
+				<p  id="admit-one-data" class="admit-one" data-admit-one="ADMIT ONE">
+
+					
+					<span>ADMIT ONE</span>
+					<span>ADMIT ONE</span>
+					<span>ADMIT ONE</span>
+				
+				
+				</p>
+				<div id="ticket-number-data" class="ticket-number" data-ticket-number="#20030220"></div>
+			</div>
+			<div class="ticket-info">
+				<p id="date-data" class="date" data-date-day="FRIDAY" data-date-month-day="SEPT 25TH" data-date-year="2025">
+					<span id="date-day"></span>
+					<span id="date-month" class="june-29"></span>
+					<span id="date-year"></span>
+				</p>
+				<div id="show-name-data" class="show-name" data-show-name-title="US BY NIGHT" data-show-name-subtitle="Design and Creativity">
+					<h1 id="title-data" class="title-data" ></h1>
+					<h2 id="subtitle-data" ></h2>
+				</div>
+				<div class="time" id="time-data" data-time-start="8:00 PM" data-time-end="11:00 PM" data-time-doors="7:00 PM">
+					<p><span class="date-time-start"></span><span> TO </span> <span class="date-time-end"></span></p>
+					<p>DOORS <span>@</span> <span class="date-time-doors" data-time-doors="7:00 PM"></span></p>
+				</div>
+				<p class="location" id="location-data" data-location-address="Waagnatie, Rijnkaai 150" data-location-city="Antwerp, Belgium">
+				📍 <span id="location-address" ></span><span class="separator"><i class="far fa-smile"></i></span> <span id="location-city"></span>
+				</p>
+			</div>
+		</div>
+		<div class="right">
+			<p class="admit-one">
+				<span>ADMIT ONE</span>
+				<span>ADMIT ONE</span>
+				<span>ADMIT ONE</span>
+			</p>
+			<div class="right-info-container">
+				<div class="show-name">
+					<h2 class="title-data" ></h2>
+				</div>
+				<div id="time-right" class="time">
+					<p>DOORS <span>@</span> <span class="date-time-doors" data-time-doors="7:00 PM"></span></p>
+				</div>
+				<div id="barcode" class="barcode" data-barcode-src="https://external-preview.redd.it/cg8k976AV52mDvDb5jDVJABPrSZ3tpi1aXhPjgcDTbw.png?auto=webp&s=1c205ba303c1fa0370b813ea83b9e1bddb7215eb" data-barcode-alt="QR Code">
+					<img id="barcode-img" src="" alt="">
+				</div>
+				<p class="ticket-number"></p>
+			</div>
+		</div>
+	</div>
+	<!-- UNCOMMENT TO START CHALLENGE -->
+	<!-- <div class="shopping-cart">
+		<h2 class="shopping-cart-title">Shopping Cart</h2>
+		<div class="ticket-options">
+			<div class="ticket-option">
+				<span>Standard Ticket</span>
+				<p>Access to all general areas.</p>
+				<button class="add-ticket" data-type="standard" data-price="10">Add</button>
+			</div>
+			<div class="ticket-option">
+				<span>VIP Ticket</span>
+				<p>Access to VIP lounge and priority seating.</p>
+				<button class="add-ticket" data-type="vip" data-price="20">Add</button>
+			</div>
+			<div class="ticket-option">
+				<span>Student Ticket</span>
+				<p>Discounted ticket for students with valid ID.</p>
+				<button class="add-ticket" data-type="student" data-price="5">Add</button>
+			</div>
+		</div>
+
+		<div class="cart-items">
+			<h3 class="cart-items-title">Items</h3>
+			<ul id="cart-list"></ul>
+		</div>
+		<div class="total-price">
+			<h3 class="total-price-title">Total Price: €<span id="total-price">0</span></h3>
+		</div>
+	</div> -->
+
+	<!-- They need to adjust this -->
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
