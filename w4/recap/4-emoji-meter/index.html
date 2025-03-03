@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emoji meter</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+    <header>
+        <h1>Emoji meter</h1>
+        <button id="theme-toggle" aria-label="Toggle Dark Theme">Toggle Dark Theme</button>
+    </header>
+
+    <main>
+        <section>
+            <p>How are you feeling today?</p>
+
+            <input type="range" id="emoji-slider" class="emoji-slider" min="0" max="4" value="0" aria-label="Emoji Slider">
+
+            <div id="emoji" class="emoji" aria-live="polite">😃</div>
+        </section>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+:root {
+  --primary-color: hsl(336, 100%, 50%);
+  --secondary-color: hsl(212, 72%, 59%);
+  --white-transparent: hsla(0, 0%, 100%, 0.2);
+  --white-transparent-hover: hsla(0, 0%, 100%, 0.3);
+  --white-border: hsla(0, 0%, 100%, 0.01);
+  --box-shadow: 0rem 0rem 1rem hsla(0, 0%, 0%, 0.1);
+  --blur: 1rem;
+  --padding: 2rem;
+  --border-radius: 1rem;
+  --transition-duration: 0.3s;
+}
+
+body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  background-size: 200% 200%;
+  animation: gradientBackground 15s ease infinite;
+  color: white;
+}
+
+@keyframes gradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--white-transparent);
+  backdrop-filter: blur(var(--blur));
+  padding: var(--padding);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--white-border);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.button {
+  background: var(--white-transparent);
+  backdrop-filter: blur(var(--blur));
+  padding: 1rem 2rem;
+  border: 1px solid var(--white-border);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  transition: background var(--transition-duration) ease;
+}
+
+.button:hover {
+  background: var(--white-transparent-hover);
+}

@@ -1,0 +1,48 @@
+body {
+  background: linear-gradient(
+    45deg,
+    hsl(48, 100%, 50%),
+    hsl(340, 100%, 70%),
+    hsl(200, 100%, 70%),
+    hsl(48, 100%, 50%)
+  );
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.jump {
+  position: absolute;
+  left: 3.125rem;
+  top: 3.125rem;
+  padding: 0.625rem 1.25rem;
+  background-color: hsl(340, 100%, 70%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 0.3125rem;
+  box-shadow: 0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.jump:hover {
+  transform: scale(1.1);
+  background-color: hsl(345, 100%, 60%);
+}
