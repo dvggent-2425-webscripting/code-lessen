@@ -1,0 +1,56 @@
+body {
+  font-family: "Irish Grover", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: hsl(47, 68%, 87%);
+  padding: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: hsl(5, 100%, 66%);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* table */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.table {
+  max-width: 60rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* card */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+.card {
+  width: 14rem;
+  height: 19.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+
+  background-image: url("../images/card.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 0.8rem;
+  box-shadow: 0.3rem 0.3rem 2rem transparent;
+
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.card--flipped {
+  background-image: unset;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0.2rem 0.2rem 1rem hsla(0, 0%, 0%, 0.195);
+  transform: scale(1.02) translateY(-0.5rem);
+}
