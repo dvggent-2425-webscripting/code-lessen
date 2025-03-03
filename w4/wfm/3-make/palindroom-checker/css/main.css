@@ -1,0 +1,61 @@
+body {
+    font-family: sans-serif;
+    background: linear-gradient(45deg, lightgreen 25%, lightcoral 25%, lightcoral 50%, lightgreen 50%, lightgreen 75%, lightcoral 75%, lightcoral 100%);
+    background-size: 3.536rem 3.536rem; /* 56.57px to rem */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background 0.5s;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1.25rem; /* 20px to rem */
+    border-radius: 0.5rem; /* 8px to rem */
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); /* 4px and 8px to rem */
+    text-align: center;
+}
+
+.word-input {
+    width: 80%;
+    padding: 0.625rem; /* 10px to rem */
+    margin-bottom: 0.625rem; /* 10px to rem */
+    border: 0.0625rem solid #ccc; /* 1px to rem */
+    border-radius: 0.25rem; /* 4px to rem */
+    font-size: 1rem; /* 16px to rem */
+}
+
+.reverse-word {
+    padding: 0.625rem 1.25rem; /* 10px and 20px to rem */
+    border: none;
+    border-radius: 0.25rem; /* 4px to rem */
+    background-color: #ff6f61;
+    color: #fff;
+    font-size: 1rem; /* 16px to rem */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.reverse-word:hover {
+    background-color: #ff3b2f;
+}
+
+.reversed-result {
+    margin-top: 1.25rem; /* 20px to rem */
+    font-size: 1.125rem; /* 18px to rem */
+}
+
+.palindrome-yes {
+    background: linear-gradient(45deg, lightgreen 25%, #baffba 25%, #baffba 50%, lightgreen 50%, lightgreen 75%, #baffba 75%, #baffba 100%);
+    background-size: 3.536rem 3.536rem; /* 56.57px to rem */
+    transition: background 0.5s;
+}
+
+.palindrome-no {
+    background: linear-gradient(45deg, #ff9b9b 25%, lightcoral 25%, lightcoral 50%, #ff9b9b 50%, #ff9b9b 75%, lightcoral 75%, lightcoral 100%);
+    background-size: 3.536rem 3.536rem; /* 56.57px to rem */
+    transition: background 0.5s;
+}

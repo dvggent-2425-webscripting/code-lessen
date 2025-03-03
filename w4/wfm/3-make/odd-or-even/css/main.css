@@ -1,0 +1,71 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem; /* 20px */
+  padding: 1.25rem; /* 20px */
+  border: 0.0625rem solid hsl(0, 0%, 80%); /* 1px */
+  border-radius: 0.3125rem; /* 5px */
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 0.25rem 0.5rem hsla(0, 0%, 0%, 0.1); /* 0 4px 8px */
+}
+
+.even {
+  background-color: lightblue;
+  transition: background-color 0.5s;
+}
+
+.odd {
+  background-color: lightcoral;
+  transition: background-color 0.5s;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.625rem; /* 10px */
+  margin: 1.25rem 0; /* 20px */
+}
+
+.label-number-input {
+  font-size: 1.2em;
+  margin-bottom: 0.3125rem; /* 5px */
+}
+
+.number-input {
+  padding: 0.625rem; /* 10px */
+  font-size: 1em;
+  border: 0.0625rem solid hsl(0, 0%, 80%); /* 1px */
+  border-radius: 0.3125rem; /* 5px */
+  width: 100%;
+  max-width: 18.75rem; /* 300px */
+}
+
+.check-number {
+  padding: 0.625rem 1.25rem; /* 10px 20px */
+  font-size: 1em;
+  color: white;
+  background-color: hsl(211, 100%, 50%);
+  border: none;
+  border-radius: 0.3125rem; /* 5px */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.check-number:hover {
+  background-color: hsl(211, 100%, 35%);
+}
+
+.result {
+  font-size: 1.2em;
+  margin-top: 1.25rem; /* 20px */
+}
