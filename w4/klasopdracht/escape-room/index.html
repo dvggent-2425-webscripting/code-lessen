@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escape Room: Cyber Heist</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <main class="container">
+        <header>
+            <h1 class="title">💻 Escape Room: Cyber Heist 🔓</h1>
+            <p>Haal het beveiligingssysteem neer en open de kluis!</p>
+        </header>
+
+        <section class="level" id="level-1">
+            <h2>1️⃣ Firewall Scan</h2>
+            <p>Voer een IP-adres in en controleer of het geldig is.</p>
+            <input type="text" class="input" id="input-1" placeholder="192.168.1.1">
+            <button class="button" id="button-1">Check</button>
+            <p class="result" id="result-1"></p>
+        </section>
+
+        <section class="level" id="level-2">
+            <h2>2️⃣ Even of Oneven Teller</h2>
+            <p>Voer een getal in en ontdek hoeveel even en oneven cijfers het bevat.</p>
+            <input type="text" class="input" id="input-2" placeholder="Typ een getal">
+            <button class="button" id="button-2">Check</button>
+            <p class="result" id="result-2"></p>
+        </section>
+
+
+        <section class="level" id="level-3">
+            <h2>3️⃣ Data-analyse</h2>
+            <p>Geef een zin op en ontdek het langste woord.</p>
+            <input type="text" class="input" id="input-3" placeholder="Typ hier een zin">
+            <button class="button" id="button-3">Analyseer</button>
+            <p class="result" id="result-3"></p>
+        </section>
+
+        <section class="level" id="level-4">
+            <h2>4️⃣ Brute Force</h2>
+            <p>Zoek het eerste getal tussen 1000 en 9999 dat deelbaar is door 17 en 29.</p>
+            <button class="button" id="button-4">Start</button>
+            <p class="result" id="result-4"></p>
+        </section>
+
+        <section class="level" id="level-5">
+            <h2>5️⃣ Excelleren</h2>
+            <p>Voer de geheime code in en ontdek de boodschap.</p>
+            <input type="text" class="input" id="input-5" placeholder="Typ de geheime code">
+            <button class="button" id="button-5">Controleer</button>
+            <p class="result" id="result-5"></p>
+            <p class="attempts" id="attempts-5"></p>
+        </section>
+
+        <section class="final">
+            <h2 class="final-message"></h2>
+        </section>
+    </main>
+    <canvas id="c" class="background"></canvas>
+
+    <script src="js/matrix.js"></script>
+</body>
+
+</html>
