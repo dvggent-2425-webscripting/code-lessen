@@ -1,0 +1,71 @@
+:root {
+  --color-1: hsl(330, 100%, 70%);
+  --color-2: hsl(330, 100%, 60%);
+  --color-3: hsl(330, 100%, 50%);
+  --color-4: hsl(330, 100%, 80%);
+}
+
+body {
+  background-color: hsl(0, 0%, 0%);
+  font-family: "Neonderthaw", cursive;
+}
+
+.title {
+  display: none;
+}
+
+.neon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.neon-sign {
+  color: var(--color-1);
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: pulse 1s infinite alternate;
+
+  &:nth-of-type(1) {
+    animation: pulse 1.1s infinite alternate;
+
+    --color-1: hsl(123, 100%, 70%);
+    --color-2: hsl(123, 100%, 60%);
+    --color-3: hsl(123, 100%, 50%);
+    --color-4: hsl(123, 100%, 80%);
+  }
+
+  &:nth-of-type(2) {
+    animation: pulse 1.2s infinite alternate;
+
+    --color-1: hsl(190, 100%, 70%);
+    --color-2: hsl(190, 100%, 60%);
+    --color-3: hsl(190, 100%, 50%);
+    --color-4: hsl(190, 100%, 80%);
+  }
+}
+
+.neon-sign.neon-off {
+  opacity: 0.3;
+  text-shadow: none;
+  animation: none;
+}
+
+@keyframes pulse {
+  0%,
+  80% {
+    text-shadow: 0 0 1rem var(--color-1), 0 0 2rem var(--color-2),
+      0 0 3rem var(--color-3);
+  }
+  65%,
+  100% {
+    text-shadow: 0 0 1.2rem var(--color-4), 0 0 2.2rem var(--color-1),
+      0 0 3.2rem var(--color-2);
+  }
+}
