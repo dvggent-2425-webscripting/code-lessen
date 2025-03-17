@@ -1,0 +1,164 @@
+body {
+  font-family: "Courier New", monospace;
+  background-color: hsl(210, 10%, 10%);
+  color: hsl(0, 0%, 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 40rem;
+  width: 100%;
+  background-color: hsl(210, 10%, 15%);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1rem hsla(0, 0%, 0%, 0.3);
+  text-align: center;
+}
+
+h1 {
+  color: hsl(0, 80%, 60%);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+/* Bom styling */
+.bomb-container {
+  margin: 2rem auto;
+  position: relative;
+}
+
+#bomb {
+  width: 5rem;
+  height: 5rem;
+  background-color: hsl(0, 0%, 0%);
+  border-radius: 50%;
+  margin: auto;
+  position: relative;
+  box-shadow: 0 0 1rem hsla(0, 70%, 50%, 0.5);
+  overflow: hidden;
+}
+
+#bomb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0.75rem;
+  height: 1.5rem;
+  background-color: hsl(0, 80%, 50%);
+  border-radius: 0.25rem;
+}
+
+/* Timer styling */
+#bomb-timer {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(0, 80%, 50%);
+  margin: 1rem 0;
+  text-shadow: 0 0 0.5rem hsla(0, 100%, 50%, 0.5);
+}
+
+/* Input styling */
+.input-container {
+  margin: 1rem 0;
+}
+
+input[type="text"] {
+  background-color: hsl(210, 5%, 20%);
+  border: 0.125rem solid hsl(210, 10%, 30%);
+  color: hsl(0, 0%, 90%);
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  width: 100%;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: hsl(0, 80%, 50%);
+  box-shadow: 0 0 0.5rem hsl(0, 93%, 35%);
+}
+
+button {
+  background-color: hsl(0, 80%, 40%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.25rem;
+  font-family: "Courier New", monospace;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: hsl(0, 80%, 50%);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+/* Animaties */
+.explode {
+  animation: explode 0.5s ease-in-out;
+}
+
+@keyframes explode {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 1rem hsla(0, 70%, 50%, 0.5);
+  }
+
+  50% {
+    transform: scale(2);
+    background-color: hsl(30, 100%, 50%);
+    box-shadow: 0 0 5rem hsla(30, 100%, 50%, 0.8);
+  }
+
+  100% {
+    transform: scale(3);
+    background-color: hsl(0, 0%, 0%);
+    opacity: 0;
+    box-shadow: 0 0 10rem hsla(0, 100%, 50%, 0.5);
+  }
+}
+
+/* Success en failure states */
+.success {
+  color: hsl(120, 70%, 50%);
+  font-weight: bold;
+  background-color: hsla(120, 70%, 30%, 0.2);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+  display: none;
+}
+
+.failure {
+  color: hsl(0, 70%, 50%);
+  font-weight: bold;
+  background-color: hsla(0, 70%, 30%, 0.2);
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin: 1rem 0;
+  display: none;
+}

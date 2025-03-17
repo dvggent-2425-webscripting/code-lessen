@@ -1,0 +1,66 @@
+/* main.css */
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600&display=swap");
+
+:root {
+  --court-color: hsl(30, 60%, 35%);
+  --ball-color: hsl(25, 85%, 50%);
+  --shadow-color: hsl(25, 50%, 30%);
+  --button-color: hsl(15, 80%, 45%);
+  --button-hover: hsl(15, 80%, 40%);
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 0.6rem 1.2rem;
+  background: var(--button-color);
+  border: none;
+  border-radius: 1.5rem;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+.container {
+  position: relative;
+  width: 22rem;
+  height: 32rem;
+  margin-top: 2rem;
+  background: var(--court-color);
+  border-radius: 1rem;
+  box-shadow: inset 0 0 1rem rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  width: 3.5rem;
+  height: 3.5rem;
+  top: 0;
+  background: var(--ball-color);
+  border-radius: 50%;
+  box-shadow: 0 0.5rem 0 var(--shadow-color);
+}
