@@ -1,0 +1,171 @@
+:root {
+  --delijnYellow: hsl(60, 100%, 44%);
+  --delijnGray: hsl(0, 0%, 60%);
+  --backgroundColor: hsl(0, 0%, 96%);
+  --headerTitleColor: hsl(0, 0%, 20%);
+  --searchBoxBackground: hsl(0, 0%, 100%);
+  --busBoardElementBackground: hsl(0, 0%, 100%);
+  --busBoardElementBorder: hsl(0, 0%, 80%);
+  --busBoardElementShadow: hsla(0, 0%, 0%, 0.1);
+  --busBoardElementStrikeBackground: hsl(0, 100%, 74%);
+  --busBoardElementStrikeColor: hsl(0, 100%, 50%);
+  --busBoardTextColor: hsl(0, 0%, 20%);
+  --busBoardSecondaryTextColor: hsl(0, 0%, 40%);
+  --busBoardTertiaryTextColor: hsl(0, 0%, 60%);
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--backgroundColor);
+  text-align: center;
+}
+
+.header {
+  width: 100vw;
+  background-color: var(--delijnYellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row;
+  margin: 0 auto 2rem;
+  padding: 0 2rem;
+  gap: 1rem;
+}
+
+.header__logo {
+  width: 5rem;
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+}
+
+.header__logo-img {
+  width: 100%;
+}
+
+.header__title {
+  flex-grow: 1;
+}
+
+.header__title h1 {
+  margin: 0;
+  font-size: 1.5em;
+  color: var(--headerTitleColor);
+}
+
+.header__toggle-strike {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.8rem;
+  background-color: var(--delijnYellow);
+  border: 1px solid white;
+  color: white;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+
+.header__toggle-strike.active {
+  background-color: var(--delijnGray);
+  color: white;
+}
+
+.main {
+  display: flex;
+  flex-flow: row;
+  margin: auto;
+  padding: 0 2rem 3rem;
+  width: 100vw;
+  justify-content: space-around;
+  border-bottom: 3px solid var(--delijnYellow);
+}
+
+.main__flex-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.main__header-title {
+  flex-grow: 1;
+  margin: 0 2rem;
+}
+
+.main__header-title-text {
+  margin: 0;
+  font-size: 1.2em;
+  color: var(--headerTitleColor);
+}
+
+.main__search {
+  display: flex;
+  align-items: center;
+}
+
+.main__search-box {
+  display: flex;
+  align-items: center;
+  background-color: var(--searchBoxBackground);
+  border: 1px solid var(--delijnGray);
+  border-radius: 2rem;
+  padding: 0.25rem 1rem;
+  position: relative;
+  justify-content: center;
+  gap: 1rem;
+  box-sizing: border-box;
+}
+
+.main__search-icon {
+  display: flex;
+  align-items: center;
+}
+
+.main__search-input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main__search-image {
+  position: absolute;
+  right: -2rem;
+  bottom: -100%;
+  width: 3.2rem;
+}
+
+.main__show-buses {
+  margin: 0.4rem;
+  padding: 0.8rem;
+  background: var(--delijnGray);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.bus-board {
+  margin-top: 20px;
+}
+
+.bus-board__element {
+  background-color: var(--busBoardElementBackground);
+  border: 1px solid var(--busBoardElementBorder);
+  border-radius: 0.4rem;
+  padding: 0.8rem;
+  margin: 0.8rem 0;
+  box-shadow: 0 2px 4px var(--busBoardElementShadow);
+}
+.bus-board__element.strike {
+  text-decoration: line-through;
+  background-color: var(--busBoardElementStrikeBackground);
+  color: var(--busBoardElementStrikeColor);
+}
+
+.bus-board__line {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: var(--busBoardTextColor);
+}

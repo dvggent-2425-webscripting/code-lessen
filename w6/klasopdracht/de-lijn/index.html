@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>De Lijn - Haltes</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+
+<body>
+  <div class="header">
+    <div class="header__logo">
+      <img src="assets/logo-de-lijn.png" alt="Logo De Lijn" class="header__logo-img" />
+    </div>
+
+    <div class="header__title">
+      <h1>Halte: <span id="halte-naam">Alle</span></h1>
+    </div>
+
+    <button id="toggle-strike" class="header__toggle-strike">Activeer Staking</button>
+  </div>
+
+  <div class="main">
+    <div class="main__flex-container">
+      <div class="main__header-title">
+        <h3 class="main__header-title-text">Welke halte zoek je?</h3>
+        <div class="main__search">
+          <div class="main__search-box">
+            <div class="main__search-icon">
+              <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M16.0073 9.00364C16.0073 12.8716 12.8716 16.0073 9.00364 16.0073C5.13564 16.0073 2 12.8716 2 9.00364C2 5.13564 5.13564 2 9.00364 2C12.8716 2 16.0073 5.13564 16.0073 9.00364Z" stroke="#695D0E" stroke-width="4"></path>
+                <rect x="16.594" y="12.8062" width="11.8729" height="3.95764" rx="1.97882" transform="rotate(45 16.594 12.8062)" fill="#695D0E"></rect>
+              </svg>
+            </div>
+            <input class="main__search-input" placeholder="Zoek op haltenummer" aria-label="Zoek op haltenummer" type="search" id="halte-nummer" />
+
+            <svg class="main__search-image" xmlns="http://www.w3.org/2000/svg" width="70" height="69" fill="none" viewBox="0 0 70 69" aria-hidden="true">
+              <path fill="#FD0" stroke="#525252" stroke-width="2.936" d="M37.313 43.364l6.229-6.23 21.33 21.332c1.147 1.147 1.147 3.006 0 4.153l-2.076 2.076c-1.146 1.147-3.005 1.147-4.152 0L37.313 43.364z"></path>
+              <circle cx="23.491" cy="23.491" r="22.023" fill="#DDD" stroke="#828282" stroke-width="2.936"></circle>
+              <circle cx="23.491" cy="23.491" r="16.105" fill="#fff" stroke="#B6B6B6" stroke-width="2.702"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <button id="set-halte" class="main__show-buses">Toon bussen</button>
+    </div>
+  </div>
+
+  <div id="bus-board" class="bus-board"></div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
