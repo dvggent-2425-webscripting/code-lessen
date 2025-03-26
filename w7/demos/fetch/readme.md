@@ -22,6 +22,5 @@ Dit project helpt je de basis van `fetch` te leren en API’s te gebruiken.
 - Pas de API aan naar een die **afbeeldingen** teruggeeft.
 - Toon de afbeelding op de pagina met een `<img>`-element.
 - Test verschillende API’s zoals:
-  - **Anime afbeeldingen**: `https://api.waifu.pics/sfw/waifu`
   - **Hondenfoto’s**: `https://dog.ceo/api/breeds/image/random`
   - **Kattenfoto’s**: `https://api.thecatapi.com/v1/images/search`
